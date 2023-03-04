@@ -1,0 +1,56 @@
+/*
+Also.. Wie CSS funktioniert
+
+EIN TYP (div in unserem fall) und wir wollen das alle divs rot sind: dann schreiben wir
+ IN CSS WIRD IMMER MIT EINEM ; nach der Linie Beendet!
+div{
+	color: red;
+}
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { /* Hier zum beispiel mal alle Sachen die man  bearbeiten kann, du kannst auch * benutzen oder bestimmten divs oder anderen tags eine ID geben, eine ID tust du mit .ID referrenzieren */
+	margin: 0; /* es gibt für manche NUI browser einen bug das sie sich nicht richtig resetten und NUI´s sich direkt am anfang starten für kurze zeit, oder du einen div hast den du vergessen hast, dann wird der dadürch erneut zu seinem ursprugn gesetzt. dafür ist dieser code da.. aber den braucht man EIGENTLICH nicht,*/
+	padding: 0;
+	border: 0; 
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Dashier alles ist nur gedacht um die CSS zu resetten, fals entweder fehler passieren, und damit sie immer nur da sind wenn sie da sein sollen :) */
+/* auf zur style.css */
